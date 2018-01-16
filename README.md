@@ -5,6 +5,8 @@ Blaze, an app to help you find interesting activities around you
 
 ~/: npm install
 
+~/: cd ../
+
 ~/: cordova platform add browser
 
 ~/: cordova run browser

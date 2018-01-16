@@ -15,16 +15,6 @@ Android SDK: https://developer.android.com/studio/index.html
 
 https://nodejs.org/en/download/
 
-#### Node SaSS
-
-~/: `npm install node-sass`
-
-#### Gulp
-
-###### Install it globally
-
-~/: `npm install -g gulp`
-
 #### Cordova
 
 ~/: `npm install -g cordova`

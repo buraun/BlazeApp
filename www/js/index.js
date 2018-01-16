@@ -45,12 +45,28 @@ var app = {
 
 
     // Swiping
+    document.addEventListener('swipeleft', function(event) {
+        if (event.target.matches('#detect-area')) {
+            console.log('Swipe left is detected.');
+        }
+    });
 
-  document.addEventListener('swipeleft' 'swiperight', function(event) {
-    if (event.target.matches('#detect-area')) {
-      // need to add what happens when event is triggered
+    document.addEventListener('swiperight', function(event) {
+        if (event.target.matches('#detect-area')) {
+            console.log('Swipe right is detected.');
+        }
+    });
+
+    //choose random images for the home
+    var body = document.querySelector('body');
+    var path = '/';
+    var nameimg =['test1.jpg','test2.png','test3.jpg','test4.jpg','test5.jpg'];
+
+    function displayImage() {
+        var num = Math.floor(Math.random() * (nameimg.length));
+        console.log(nameimg[num]);
+        body.style.background = "url(" + nameimg[num] + ")";
     }
-  });
-
+    displayImage();
 
 app.initialize();

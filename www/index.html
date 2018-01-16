@@ -45,7 +45,6 @@ under the License.
     <ons-toolbar>
       <div class="left">Blaze</div>
     </ons-toolbar>
-    <div id="detect-area">
     <ons-card>
       <img src="http://lorempicsum.com/nemo/255/200/2" alt="Onsen UI" style="width: 100%">
       <div class="title">
@@ -62,9 +61,13 @@ under the License.
           <ons-list-item>Super</ons-list-item>
           <ons-list-item>Mouais bof</ons-list-item>
         </ons-list>
+        <ons-gesture-detector>
+          <div id="detect-area" style="width: 100px; height: 100px;">
+            Swipe Here
+          </div>
+        </ons-gesture-detector>
       </div>
     </ons-card>
-    </div>
   </ons-page>
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="js/index.js"></script>

@@ -11,3 +11,4 @@ Blaze, an app to help you find interesting activities around you
 
 ~/: cordova run browser
 
+In case of panic : git reset --hard origin/master

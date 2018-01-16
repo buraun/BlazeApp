@@ -1,6 +1,11 @@
 # BlazeApp
-Blaze
+Blaze, an app to help you find interesting activities around you
+
 ~/: cd ./www
+
 ~/: npm install
+
 ~/: cordova platform add browser
+
 ~/: cordova run browser
+

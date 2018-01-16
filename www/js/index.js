@@ -43,4 +43,14 @@ var app = {
     }
 };
 
+
+    // Swiping
+
+  document.addEventListener('swipeleft' 'swiperight', function(event) {
+    if (event.target.matches('#detect-area')) {
+      // need to add what happens when event is triggered
+    }
+  });
+
+
 app.initialize();

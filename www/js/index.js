@@ -35,3 +35,19 @@ document.addEventListener('init', function(event) {
         //page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
     }
 });
+
+document.addEventListener('init', function(event) {
+    var page = event.target;
+    console.log('get triggerd');
+    if (page.id === 'Tab2') {
+        page.querySelector('#push-button2').onclick = function() {
+            console.log('test2');
+            document.querySelector('#myNavigator').pushPage('container.html');
+        };
+    } else if (page.id === 'Tab1') {
+        console.log('test1');
+        page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
+    }
+});
+
+

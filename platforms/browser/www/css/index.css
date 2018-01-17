@@ -22,10 +22,19 @@
   src: url(font/anabold.ttf);
 }
 body {
+
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color: #f8a23e !important;
+    background: rgb(250,217,97);
+    background: rgb(250,217,97);
+    background: rgb(250,217,97);
+    background: -moz-linear-gradient(top, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%) !important;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(250,217,97)), color-stop(92%, rgb(247,107,28)), color-stop(100%, rgb(247,107,28)))!important;
+    background: -webkit-linear-gradient(top, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%)!important;
+    background: -o-linear-gradient(top, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%)!important;
+    background: -ms-linear-gradient(top, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%)!important;
+    background: linear-gradient(to bottom, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%)!important;
     background-attachment:fixed;
     font-family:'Open sans','HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;

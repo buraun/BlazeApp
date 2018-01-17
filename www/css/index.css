@@ -27,7 +27,7 @@ body {
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color: #f8a23e !important;
     background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family:'Open sans','HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
     margin:0px;
@@ -136,8 +136,7 @@ h1 {
 /* clouds animation */
 
 .cloudsglobal{
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
+top: 150px;
 }
 .clouds {
   width: 200x;
@@ -148,7 +147,6 @@ h1 {
 
 .cloud1 {
 	top: 80px;
-  z-index: 100;
   fill: #eee;
   -webkit-animation: move 52s linear infinite;
   -moz-animation: move 52s linear infinite;

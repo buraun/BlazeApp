@@ -102,14 +102,149 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+
+.page{
+overflow-x: hidden !important;
+}
+
+.page, .page__background, .page__content{
+  -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+  background-color:#F76B1C !important;
+  background-image:linear-gradient(top, #FAD961 0%, #F76B1C 51%);
+  background-image:-webkit-linear-gradient(top, #FAD961 0%, #F76B1C 51%);
+  background-image:-ms-linear-gradient(top, #FAD961 0%, #F76B1C 51%);
+  position: unset;
+}
+
+/* clouds animation */
+
+.cloudsglobal{
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+.clouds {
+  width: 200x;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.cloud1 {
+	top: 80px;
+  z-index: 100;
+  fill: #eee;
+  -webkit-animation: move 52s linear infinite;
+  -moz-animation: move 52s linear infinite;
+  -o-animation: move 52s linear infinite;
+  animation: move 52s linear infinite;
+}
+
+.cloud2 {
+  top: 73px;
+  fill: #eee;
+  -webkit-animation: move 140s linear infinite backwards;
+  -moz-animation: move 140s linear infinite backwards;
+  -o-animation: move 140s linear infinite backwards;
+  animation: move 140s linear infinite backwards;
+}
+
+.cloud3 {
+  top: 15px;
+  fill: #eee;
+  -webkit-animation: move 45s linear infinite backwards;
+  -moz-animation: move 45s linear infinite backwards;
+  -o-animation: move 45s linear infinite backwards;
+  animation: move 45s linear infinite backwards;
+}
+
+.cloud4 {
+  top: 33px;
+  fill: #eee;
+  -webkit-animation: move 58s linear infinite backwards;
+  -moz-animation: move 58s linear infinite backwards;
+  -o-animation: move 58s linear infinite backwards;
+  animation: move 58s linear infinite backwards;
+}
+
+.cloud5 {
+  top: 42px;
+  fill: #eee;
+  -webkit-animation: move 48s linear infinite backwards;
+  -moz-animation: move 48s linear infinite backwards;
+  -o-animation: move 48s linear infinite backwards;
+  animation: move 48s linear infinite backwards;
+}
+.cloud6 {
+  top: 28px;
+  fill: #eee;
+  -webkit-animation: move 64s linear infinite backwards;
+  -moz-animation: move 64s linear infinite backwards;
+  -o-animation: move 64s linear infinite backwards;
+  animation: move 64s linear infinite backwards;
+}
+.cloud7 {
+  top: 5px;
+  fill: #eee;
+  -webkit-animation: move 153s linear infinite backwards;
+  -moz-animation: move 153s linear infinite backwards;
+  -o-animation: move 153s linear infinite backwards;
+  animation: move 153s linear infinite backwards;
+}
+.cloud8 {
+  top: 75px;
+  fill: #eee;
+  -webkit-animation: move 42s linear infinite backwards;
+  -moz-animation: move 42s linear infinite backwards;
+  -o-animation: move 42s linear infinite backwards;
+  animation: move 42s linear infinite backwards;
+}
+.cloud9 {
+  top: 110px;
+  fill: #eee;
+  -webkit-animation: move 74s linear infinite backwards;
+  -moz-animation: move 74s linear infinite backwards;
+  -o-animation: move 74s linear infinite backwards;
+  animation: move 74s linear infinite backwards;
+}
+.cloud10 {
+  top: 37px;
+  fill: #eee;
+  -webkit-animation: move 84s linear infinite backwards;
+  -moz-animation: move 84s linear infinite backwards;
+  -o-animation: move 84s linear infinite backwards;
+  animation: move 84s linear infinite backwards;
+}
+
+.cloud11 {
+  top:22px;
+  fill: #eee;
+  -webkit-animation: move 47s linear infinite backwards;
+  -moz-animation: move 47s linear infinite backwards;
+  -o-animation: move 47s linear infinite backwards;
+  animation: move 47s linear infinite backwards;
+}
+@-webkit-keyframes move {
+  from {-webkit-transform: translateX(-15px);}
+  to {-webkit-transform: translateX(780px);}
+}
+
+
+.mountains{
+  position: fixed;
+  bottom: 0px;
+  left: 25px;
 }

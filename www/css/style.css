@@ -135,7 +135,26 @@
 	color: grey;
 }	
 
-.yo{
-	border: none;
+.alert-dialog-container{
+	text-align: center;
+}
+
+.dialog-container{
+	text-align: center;
+	border-radius: 20px;
+	padding-top: 20px;
+	width: 85%;
+	margin: auto;
+}
+
+.block-modal{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 17.5vh;
+}
+
+.alert-dialog-button{
 	color: #F76B1C;
+	font-weight: 700;
 }

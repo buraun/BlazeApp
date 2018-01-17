@@ -28,7 +28,7 @@ document.addEventListener('init', function(event) {
     var page = event.target;
 
     if (page.id === 'home') {
-        page.querySelector('#push-button').onclick = function() {
+        document.querySelector('#push-button').onclick = function() {
             document.querySelector('#myNavigator').pushPage('container.html', {data: {title: 'container'}});
         };
     } else if (page.id === 'container') {
@@ -38,14 +38,15 @@ document.addEventListener('init', function(event) {
 
 document.addEventListener('init', function(event) {
     var page = event.target;
-    console.log('get triggerd');
     if (page.id === 'Tab2') {
+        ons.createDialog('dialog.html').then(function(dialog) {
+            dialog.show();
+          });
+
         page.querySelector('#push-button2').onclick = function() {
-            console.log('test2');
             document.querySelector('#myNavigator').pushPage('container.html');
         };
     } else if (page.id === 'Tab1') {
-        console.log('test1');
         page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
     }
 });

@@ -16,19 +16,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-}
 
+@font-face {
+  font-family: 'anabold';
+  src: url(font/anabold.ttf);
+}
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(        linear,        left top,        left bottom,        color-stop(0, #A7A7A7),        color-stop(0.51, #E4E4E4)    );
+    background-color: #f8a23e !important;
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -128,6 +125,12 @@ h1 {
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+}
+
+.center>h2{
+  color: #FFFF;
+  text-transform: none;
+  font-family: 'anabold' ;
 }
 
 /* clouds animation */
@@ -253,4 +256,13 @@ h1 {
   bottom: 0px;
   left: 25px;
   z-index: -1;
+}
+
+
+/* buttons style overiding onsen */
+
+.button{
+  background: #FFFF;
+  color: #fad267;
+  border-radius: 21px;
 }

@@ -38,3 +38,5 @@ if you have'nt done it already, clone the rep: `https://github.com/buraun/BlazeA
 ###### `N9qfewf1BJBfke4iSs3lNU4uiL9PVs+06yTd2Tkg3aJ0wH8bvmKx8rVeUZ7M7tFZ`
 
 ### Api Key Encryption Mode: CBC Blowfish
+
+###### In case of panic : `git reset --hard origin/master`

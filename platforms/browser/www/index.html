@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
 -->
 <html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css ; media-src *; img-src * data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="css/onsen.css">
-        <link rel="stylesheet" type="text/css" href="css/onsen-css-components.min.css">
-        <title>Hello World</title>
+<head>
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+  https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+  * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+  * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+  * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+  * Enable inline JS: add 'unsafe-inline' to default-src
+-->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css ; media-src *; img-src * data: content:;">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" type="text/css" href="css/onsenui.css">
+<link rel="stylesheet" type="text/css" href="css/onsen-css-components.min.css">
+<title>Hello World</title>
 
-    </head>
-    <body>
-       <ons-page>
+</head>
+<body>
+<ons-navigator swipeable id="myNavigator" page="home.html"></ons-navigator>
+<template id="home.html">
+  <ons-page id="home">
 
-       	<ons-toolbar>
-       		<div class="left">Blaze</div>
-       	</ons-toolbar>
+    <p>Page d'accueil</p>
 
-        <ons-card>
-    <img src="http://lorempicsum.com/nemo/255/200/2" alt="Onsen UI" style="width: 100%">
-    <div class="title">
-      VTT EN PARACHUTE
-    </div>
-    <div class="content">
-      <div>
-        <ons-button><ons-icon icon="ion-thumbsup"></ons-icon></ons-button>
-        <ons-button><ons-icon icon="ion-share"></ons-icon></ons-button>
-      </div>
-      <ons-list>
-        <ons-list-header>Avis</ons-list-header>
-        <ons-list-item>MEGA FUN !!</ons-list-item>
-        <ons-list-item>Super</ons-list-item>
-        <ons-list-item>Mouais bof</ons-list-item>
-      </ons-list>
-    </div>
-  </ons-card>
-       </ons-page>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/onsenui.min.js"></script>
-    </body>
+    <ons-button id="push-button">Push page</ons-button>
+  </ons-page>
+</template>
+
+<template id="container.html">
+  <ons-page id="container">
+    <ons-toolbar>
+      <div class="left">Blaze</div>
+    </ons-toolbar>
+    <ons-tabbar>
+      <ons-tab label="Tab 1" page="tab1.html" active></ons-tab>
+      <ons-tab label="Tab 2" page="tab2.html"></ons-tab>
+    </ons-tabbar>
+  </ons-page>
+</template>
+
+<template id="tab1.html">
+  <ons-page id="Tab1">
+    <p>tab 1</p>
+  </ons-page>
+</template>
+
+<template id="tab2.html">
+  <ons-page id="Tab2">
+    <p>tab 2</p>
+  </ons-page>
+</template>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/onsenui.min.js"></script>
+</body>
 </html>

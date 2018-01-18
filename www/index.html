@@ -28,7 +28,7 @@ under the License.
   * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
   * Enable inline JS: add 'unsafe-inline' to default-src
 -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css ; media-src *; img-src * data: content:;">
+<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css ; media-src *; img-src * data: content:;">-->
 <meta name="format-detection" content="telephone=no">
 <meta name="msapplication-tap-highlight" content="no">
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -37,6 +37,7 @@ under the License.
 <link rel="stylesheet" type="text/css" href="css/onsenui.css">
 <link rel="stylesheet" type="text/css" href="css/onsen-css-components.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <title>Hello World</title>
 
@@ -71,7 +72,7 @@ under the License.
       <h2 class="title-activity">Chute Libre</h2>
       <div class="contains-btn">
           <ons-toolbar-button>
-            <ons-button class="btn-1">Non merci <?xml version="1.0" encoding="iso-8859-1"?>
+            <ons-button onclick="valider()" class="btn-1">Non merci <?xml version="1.0" encoding="iso-8859-1"?>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve" width="18px" height="14px">
                 <g id="Close">
                   <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312   c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312   l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937   c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#D80027"/>
@@ -88,6 +89,69 @@ under the License.
           </ons-toolbar-button>
       </div>
     </div>
+      <div class="box">
+          <h2 class="title-activity">Chute Libre</h2>
+          <div class="contains-btn">
+              <ons-toolbar-button>
+                  <ons-button class="btn-1">Non merci <?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve" width="18px" height="14px">
+                <g id="Close">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312   c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312   l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937   c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#D80027"/>
+                </g>
+              </svg>
+                  </ons-button>
+                  <ons-button class="btn-2">J'y vais<?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 288.941 288.941" style="enable-background:new 0 0 288.941 288.941;" xml:space="preserve" width="20px" height="16px">
+                <g>
+                  <path id="Check" d="M285.377,46.368c-4.74-4.704-12.439-4.704-17.179,0L96.309,217.114L20.734,142.61   c-4.74-4.704-12.439-4.704-17.179,0s-4.74,12.319,0,17.011l84.2,82.997c4.692,4.644,12.499,4.644,17.191,0l180.43-179.239   C290.129,58.687,290.129,51.06,285.377,46.368C280.637,41.664,290.129,51.06,285.377,46.368z" fill="#91DC5A"/>
+                  </g>
+              </svg>
+                  </ons-button>
+              </ons-toolbar-button>
+          </div>
+      </div>
+      <div class="box">
+          <h2 class="title-activity">Chute Libre</h2>
+          <div class="contains-btn">
+              <ons-toolbar-button>
+                  <ons-button class="btn-1">Non merci <?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve" width="18px" height="14px">
+                <g id="Close">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312   c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312   l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937   c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#D80027"/>
+                </g>
+              </svg>
+                  </ons-button>
+                  <ons-button class="btn-2">J'y vais<?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 288.941 288.941" style="enable-background:new 0 0 288.941 288.941;" xml:space="preserve" width="20px" height="16px">
+                <g>
+                  <path id="Check" d="M285.377,46.368c-4.74-4.704-12.439-4.704-17.179,0L96.309,217.114L20.734,142.61   c-4.74-4.704-12.439-4.704-17.179,0s-4.74,12.319,0,17.011l84.2,82.997c4.692,4.644,12.499,4.644,17.191,0l180.43-179.239   C290.129,58.687,290.129,51.06,285.377,46.368C280.637,41.664,290.129,51.06,285.377,46.368z" fill="#91DC5A"/>
+                  </g>
+              </svg>
+                  </ons-button>
+              </ons-toolbar-button>
+          </div>
+      </div>
+      <div class="box">
+          <h2 class="title-activity">Chute Libre</h2>
+          <div class="contains-btn">
+              <ons-toolbar-button>
+                  <ons-button class="btn-1">Non merci <?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve" width="18px" height="14px">
+                <g id="Close">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312   c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312   l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937   c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#D80027"/>
+                </g>
+              </svg>
+                  </ons-button>
+                  <ons-button class="btn-2">J'y vais<?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 288.941 288.941" style="enable-background:new 0 0 288.941 288.941;" xml:space="preserve" width="20px" height="16px">
+                <g>
+                  <path id="Check" d="M285.377,46.368c-4.74-4.704-12.439-4.704-17.179,0L96.309,217.114L20.734,142.61   c-4.74-4.704-12.439-4.704-17.179,0s-4.74,12.319,0,17.011l84.2,82.997c4.692,4.644,12.499,4.644,17.191,0l180.43-179.239   C290.129,58.687,290.129,51.06,285.377,46.368C280.637,41.664,290.129,51.06,285.377,46.368z" fill="#91DC5A"/>
+                  </g>
+              </svg>
+                  </ons-button>
+              </ons-toolbar-button>
+          </div>
+      </div>
   </ons-page>
 </template>
 
@@ -149,7 +213,7 @@ under the License.
       <h1>Saut en parachute</h1>
       <p>Une chute libre en plein Paris? C'est possible et ça se passe en intérieur ! Si tu n'as pas peur du vide, teste le simulateur de chute libre de iFLY.<br><br>Grâce à son spectaculaire tube de verre de 14m de hauteur et sa soufflerie d'un diamètre de 4m30 situées sur tous les balcons du centre commercial et de loisirs vill'Up (Parc de La Villette), tu pourras simuler une</p>
     </div>
-    <ons-list>
+    <ons-list style="display: none;">
       <ons-list-item class="yo">La Villette Metro Porte de Pantin</ons-list-item>
       <ons-list-item class="yo">Réserver</ons-list-item>
       <ons-list-item class="yo">Aller sur le site web</ons-list-item>

@@ -126,6 +126,11 @@
 
 #Tab2 h1{
 	padding: 25px 0;
+	text-transform: none;
+}
+
+#Tab2{
+	background: #fff;
 }
 
 #Tab2 p{
@@ -133,7 +138,16 @@
 	line-height: 25px;
 	padding: 0 20px;
 	color: grey;
-}	
+	text-transform: none;
+}
+
+#Tab2 .page__content{
+	background: #fff!important;
+}
+ons-alert-dialog{
+	display: none!important;
+	}
+
 
 .alert-dialog-container{
 	text-align: center;
@@ -157,4 +171,16 @@
 .alert-dialog-button{
 	color: #F76B1C;
 	font-weight: 700;
+}
+
+.tabbar__button{
+	line-height: initial;
+}
+
+ /*css pour l'apparition des nouvelles cartes*/
+.page__content .box{
+	display: none;
+}
+.page__content .box:first-child{
+	display: block;
 }

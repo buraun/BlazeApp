@@ -113,8 +113,9 @@
 	color: #F76B1C;
 	font-size: 15px;
 	background: none;
-	padding-left: 20px 10px;
+	padding-left: 20px;
 	z-index: 3333;
+	margin-top: 20px;
 }
 
 .info-activity_img #push-button2 svg{
@@ -143,7 +144,7 @@
 }
 
 #Tab2 p{
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 25px;
 	padding: 0 20px;
 	color: grey;
@@ -192,4 +193,37 @@ ons-alert-dialog{
 }
 .page__content .box:first-child{
 	display: block;
+}
+
+#pin{
+	padding: 0 20px;
+	text-align: center;
+}
+#pin p{
+	color: #F8812A;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	display: inline;
+	padding-left: 10px;
+}
+#pin img{
+	display: inline;
+	vertical-align: middle;
+}
+#visitWeb{
+	width: 206px;
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 20px;
+	background: #000000;
+	margin-top: 50px;
+}
+#visitWeb a{
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	font-size: 16px;
+	text-transform: none;
 }

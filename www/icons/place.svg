@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="19px" viewBox="0 0 13 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>place</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-22.000000, -624.000000)" fill-rule="nonzero" fill="#F8812A">
+            <path d="M28.5,624 C24.9064286,624 22,626.906429 22,630.5 C22,635.375 28.5,642.571429 28.5,642.571429 C28.5,642.571429 35,635.375 35,630.5 C35,626.906429 32.0935714,624 28.5,624 Z M28.5,632.821429 C27.2185714,632.821429 26.1785714,631.781429 26.1785714,630.5 C26.1785714,629.218571 27.2185714,628.178571 28.5,628.178571 C29.7814286,628.178571 30.8214286,629.218571 30.8214286,630.5 C30.8214286,631.781429 29.7814286,632.821429 28.5,632.821429 Z" id="place"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,186 @@
+					/* template 1 */
+/* header */
+
+
+#container ons-toolbar .left, .right{
+	font-weight: 700;
+	color: #F76B1C;
+	font-size: 25px;
+	margin-left: 30px;
+}	
+
+#container ons-toolbar .right{
+	color: #F76B1C;
+	font-size: 12px;
+	margin-left: 30px;
+	margin-right: 30px;
+}					
+
+
+
+/* container-contenu */
+
+.box{
+	border-radius: 20px;
+	margin: 35px;
+	height: 75vh;
+	background-image: url(../img/montagne.JPG);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.box h2{
+	position: absolute;
+	top: 65%;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	z-index: 2222;
+}
+
+.img-contenu{
+
+}
+
+.container-contenu img{
+	width: 100%;
+	border-radius: 20px;
+}
+
+.contains-btn{
+	height: 50%;
+	background: linear-gradient(transparent, black);
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.box ons-toolbar-button{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	border-radius: 20px;
+	margin-bottom: 35px;
+}
+
+.box ons-toolbar-button ons-button{
+	background: none;
+	font-size: 14px;
+}
+
+.box ons-toolbar-button ons-button svg{
+	margin-left: 10px;
+}
+
+.box ons-toolbar-button .btn-1{
+	color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.box ons-toolbar-button .btn-2{
+	color: green;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+	
+						/* template 2*/
+
+.info-activity_img{
+	height: 30vh;
+	background-image: url(../img/montagne.JPG);
+	position: relative;
+}
+
+.background-degrade{
+	position: absolute;
+	height: 100%;
+	background: black;
+	opacity: 0.3;
+	width: 100%;
+}
+
+.info-activity_img #push-button2{
+	color: #F76B1C;
+	font-size: 15px;
+	background: none;
+	padding-left: 20px 10px;
+	z-index: 3333;
+}
+
+.info-activity_img #push-button2 svg{
+	color: #F76B1C;
+	font-size: 15px;
+	background: none;
+	padding-right:10px;
+}
+
+#Tab2 h1{
+	padding: 25px 0;
+	text-transform: none;
+}
+
+#Tab2{
+	background: #fff;
+}
+
+#Tab2 p{
+	font-size: 16px;
+	line-height: 25px;
+	padding: 0 20px;
+	color: grey;
+	text-transform: none;
+}
+
+#Tab2 .page__content{
+	background: #fff!important;
+}
+ons-alert-dialog{
+	display: none!important;
+	}
+
+
+.alert-dialog-container{
+	text-align: center;
+}
+
+.dialog-container{
+	text-align: center;
+	border-radius: 20px;
+	padding-top: 20px;
+	width: 85%;
+	margin: auto;
+}
+
+.block-modal{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 17.5vh;
+}
+
+.alert-dialog-button{
+	color: #F76B1C;
+	font-weight: 700;
+}
+
+.tabbar__button{
+	line-height: initial;
+}
+
+ /*css pour l'apparition des nouvelles cartes*/
+.page__content .box{
+	display: none;
+}
+.page__content .box:first-child{
+	display: block;
+}

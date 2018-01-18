@@ -38,10 +38,9 @@ under the License.
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 <title>Blaze app</title>
-
 </head>
 <body>
-<ons-navigator animation="lift" swipeable id="myNavigator" page="home.html"></ons-navigator>
+<ons-navigator animation="slide" swipeable id="myNavigator" page="home.html"></ons-navigator>
 <template id="home.html">
 
   <ons-page id="home">
@@ -169,23 +168,173 @@ under the License.
   <ons-page id="container">
     <ons-toolbar>
       <div class="left">Blaze</div>
+      <div class="right">Paris</div>
     </ons-toolbar>
     <ons-tabbar>
-      <ons-tab label="Tab 1" page="tab1.html" active></ons-tab>
-      <ons-tab label="Tab 2" page="tab2.html"></ons-tab>
+      <ons-tab label="" page="tab1.html" active><img src='img/search3.png'/></ons-tab>
+      <ons-tab label="" page="tab2.html"><img src='img/user.png'/></ons-tab>
     </ons-tabbar>
   </ons-page>
 </template>
 
 <template id="tab1.html">
   <ons-page id="Tab1">
-    <p>tab 1</p>
+    <div class="box">
+      <h2 class="title-activity">Chute Libre</h2>
+      <div class="contains-btn">
+          <ons-toolbar-button>
+            <ons-button onclick="delecard()" class="btn-1">Non merci <?xml version="1.0" encoding="iso-8859-1"?>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve" width="18px" height="14px">
+                <g id="Close">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312   c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312   l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937   c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#D80027"/>
+                </g>
+              </svg>
+            </ons-button>
+             <ons-button class="btn-2" onclick="valider()">J'y vais<?xml version="1.0" encoding="iso-8859-1"?>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 288.941 288.941" style="enable-background:new 0 0 288.941 288.941;" xml:space="preserve" width="20px" height="16px">
+                <g>
+                  <path id="Check" d="M285.377,46.368c-4.74-4.704-12.439-4.704-17.179,0L96.309,217.114L20.734,142.61   c-4.74-4.704-12.439-4.704-17.179,0s-4.74,12.319,0,17.011l84.2,82.997c4.692,4.644,12.499,4.644,17.191,0l180.43-179.239   C290.129,58.687,290.129,51.06,285.377,46.368C280.637,41.664,290.129,51.06,285.377,46.368z" fill="#91DC5A"/>
+                  </g>
+              </svg>
+             </ons-button>
+          </ons-toolbar-button>
+      </div>
+    </div>
+      <div class="box">
+          <h2 class="title-activity">Chute Libre</h2>
+          <div class="contains-btn">
+              <ons-toolbar-button>
+                  <ons-button class="btn-1">Non merci <?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve" width="18px" height="14px">
+                <g id="Close">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312   c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312   l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937   c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#D80027"/>
+                </g>
+              </svg>
+                  </ons-button>
+                  <ons-button class="btn-2">J'y vais<?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 288.941 288.941" style="enable-background:new 0 0 288.941 288.941;" xml:space="preserve" width="20px" height="16px">
+                <g>
+                  <path id="Check" d="M285.377,46.368c-4.74-4.704-12.439-4.704-17.179,0L96.309,217.114L20.734,142.61   c-4.74-4.704-12.439-4.704-17.179,0s-4.74,12.319,0,17.011l84.2,82.997c4.692,4.644,12.499,4.644,17.191,0l180.43-179.239   C290.129,58.687,290.129,51.06,285.377,46.368C280.637,41.664,290.129,51.06,285.377,46.368z" fill="#91DC5A"/>
+                  </g>
+              </svg>
+                  </ons-button>
+              </ons-toolbar-button>
+          </div>
+      </div>
+      <div class="box">
+          <h2 class="title-activity">Chute Libre</h2>
+          <div class="contains-btn">
+              <ons-toolbar-button>
+                  <ons-button class="btn-1">Non merci <?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve" width="18px" height="14px">
+                <g id="Close">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312   c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312   l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937   c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#D80027"/>
+                </g>
+              </svg>
+                  </ons-button>
+                  <ons-button class="btn-2">J'y vais<?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 288.941 288.941" style="enable-background:new 0 0 288.941 288.941;" xml:space="preserve" width="20px" height="16px">
+                <g>
+                  <path id="Check" d="M285.377,46.368c-4.74-4.704-12.439-4.704-17.179,0L96.309,217.114L20.734,142.61   c-4.74-4.704-12.439-4.704-17.179,0s-4.74,12.319,0,17.011l84.2,82.997c4.692,4.644,12.499,4.644,17.191,0l180.43-179.239   C290.129,58.687,290.129,51.06,285.377,46.368C280.637,41.664,290.129,51.06,285.377,46.368z" fill="#91DC5A"/>
+                  </g>
+              </svg>
+                  </ons-button>
+              </ons-toolbar-button>
+          </div>
+      </div>
+      <div class="box">
+          <h2 class="title-activity">Chute Libre</h2>
+          <div class="contains-btn">
+              <ons-toolbar-button>
+                  <ons-button class="btn-1">Non merci <?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve" width="18px" height="14px">
+                <g id="Close">
+                  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312   c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312   l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937   c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" fill="#D80027"/>
+                </g>
+              </svg>
+                  </ons-button>
+                  <ons-button class="btn-2">J'y vais<?xml version="1.0" encoding="iso-8859-1"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 288.941 288.941" style="enable-background:new 0 0 288.941 288.941;" xml:space="preserve" width="20px" height="16px">
+                <g>
+                  <path id="Check" d="M285.377,46.368c-4.74-4.704-12.439-4.704-17.179,0L96.309,217.114L20.734,142.61   c-4.74-4.704-12.439-4.704-17.179,0s-4.74,12.319,0,17.011l84.2,82.997c4.692,4.644,12.499,4.644,17.191,0l180.43-179.239   C290.129,58.687,290.129,51.06,285.377,46.368C280.637,41.664,290.129,51.06,285.377,46.368z" fill="#91DC5A"/>
+                  </g>
+              </svg>
+                  </ons-button>
+              </ons-toolbar-button>
+          </div>
+      </div>
   </ons-page>
 </template>
 
+    <template id="dialog.html">
+      <ons-alert-dialog>
+        <img src="img/switchR.JPG">
+        <div class="alert-dialog-content">
+           <p>Swipe vers la <span>droite</span> si tu es intéressé par l'activité</p>
+        </div>
+        <div class="alert-dialog-footer">
+          <button class="alert-dialog-button">OK</button>
+        </div>
+      </ons-alert-dialog>
+    </template>
+
+    <template id="dialog2.html">
+      <ons-alert-dialog>
+        <img src="img/switchL.JPG">
+        <div class="alert-dialog-content">
+           <p>Swipe vers la <span>droite</span> si tu es intéressé par l'activité</p>
+        </div>
+        <div class="alert-dialog-footer">
+          <button class="alert-dialog-button">OK</button>
+        </div>
+      </ons-alert-dialog>
+    </template>
+
+    <template id="dialog3.html">
+      <ons-alert-dialog>
+        <img src="img/tappe.JPG">
+        <div class="alert-dialog-content">
+           <p>Swipe vers la <span>droite</span> si tu es intéressé par l'activité</p>
+        </div>
+        <div class="alert-dialog-footer">
+          <button class="alert-dialog-button">OK</button>
+        </div>
+      </ons-alert-dialog>
+    </template>
+
 <template id="tab2.html">
   <ons-page id="Tab2">
-    <p>tab 2</p>
+    <div class="info-activity_img">
+      <div class="background-degrade">
+        <ons-button id="push-button2"><?xml version="1.0" encoding="iso-8859-1"?>
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="10px" height="12px" viewBox="0 0 103.537 103.537" style="enable-background:new 0 0 103.537 103.537;"
+             xml:space="preserve">
+          <g>
+            <g>
+              <path d="M103.048,12.002c-1.445-3.771-5.679-5.649-9.438-4.207L4.692,41.9c-2.753,1.055-4.603,3.662-4.688,6.609
+                c-0.087,2.948,1.608,5.656,4.295,6.872l88.917,40.196c0.978,0.44,2,0.65,3.006,0.65c2.784,0,5.442-1.6,6.665-4.302
+                c1.661-3.678,0.029-8.007-3.648-9.671L26.273,49.277l72.568-27.834C102.61,19.998,104.496,15.771,103.048,12.002z" fill="#F76B1C"/>
+            </g>
+          </g>
+        </svg>Recherche</ons-button>
+      </div>
+    </div>
+    <div>
+      <h1>Saut en parachute</h1>
+      <p>Une chute libre en plein Paris? C'est possible et ça se passe en intérieur ! Si tu n'as pas peur du vide, teste le simulateur de chute libre de iFLY.<br><br>Grâce à son spectaculaire tube de verre de 14m de hauteur et sa soufflerie d'un diamètre de 4m30 situées sur tous les balcons du centre commercial et de loisirs vill'Up (Parc de La Villette), tu pourras simuler une</p>
+    </div>
+    <ons-list style="display: block;">
+      <ons-list-item class="yo">La Villette Metro Porte de Pantin</ons-list-item>
+      <ons-list-item class="yo">Réserver</ons-list-item>
+      <ons-list-item class="yo">Aller sur le site web</ons-list-item>
+    </ons-list>
+  </ons-page>
+</template>
+
+<template id="Tab3">
+  <ons-page id="tab3">
+
   </ons-page>
 </template>
 

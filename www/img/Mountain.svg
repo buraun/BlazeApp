@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="425" height="342" viewBox="0 0 425 342">
+  <defs>
+    <polygon id="group-b" points="120.5 44 241 342 0 342"/>
+    <filter id="group-a" width="105.8%" height="104.7%" x="-2.9%" y="-1.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.177875906 0"/>
+    </filter>
+    <polygon id="group-d" points="235 2 417 342 53 342"/>
+    <filter id="group-c" width="103.8%" height="104.1%" x="-1.9%" y="-1.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.237601902 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(4)">
+    <path stroke="#D8D8D8" stroke-linecap="square" d="M91.5,147.5 L73.4722436,147.5"/>
+    <use fill="#000" filter="url(#group-a)" xlink:href="#group-b"/>
+    <use fill="#FFF" xlink:href="#group-b"/>
+    <use fill="#000" filter="url(#group-c)" xlink:href="#group-d"/>
+    <use fill="#FFF" xlink:href="#group-d"/>
+    <circle cx="75" cy="141" r="1" fill="#FFF" fill-rule="nonzero"/>
+    <path fill="#FFF" fill-rule="nonzero" d="M71.1190826,148.617774 C71.2355489,148.796845 71.4151025,148.900438 71.6030861,148.918353 C71.7522361,148.932559 71.9067068,148.892501 72.039204,148.793322 L73.4127525,147.763696 C74.0634226,148.654159 74.4407028,148.997949 75.4972254,148.997949 C75.5380629,149.003661 75.977463,148.995352 76.0185769,148.997949 C76.8187425,148.994388 76.9816432,148.455874 76.9890713,147.583363 C76.9941847,146.978754 77.0108721,145.510796 76.9890713,144.79028 C76.9684108,144.000369 76.36649,144.01016 76.0960368,144.000591 C76.0549575,144.003188 75.295733,143.998403 75.2545845,144.000591 C75.1528364,144.000591 74.992285,144.01016 74.8353613,144.127885 L73.7802898,144.925252 C73.6233661,145.041381 73.4660969,145.159811 73.3169123,145.27531 L72.5628357,145.845276 C72.2721019,146.063181 72.1972678,146.485676 72.3844223,146.804133 L71.2826053,147.630171 C70.9833032,147.854307 70.9101275,148.296609 71.1190826,148.617774 Z"/>
+    <polygon fill="#FACF5B" points="235.478 0 211 45 223.239 36.008 225.499 41.391 241.166 29.629 257 39.726"/>
+    <polygon fill="#FACF5B" points="120.494 42 88 122 102.993 110.125 106.282 121.422 126.534 97.936 150 115.421"/>
+  </g>
+</svg>

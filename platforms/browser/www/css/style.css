@@ -218,7 +218,11 @@ ons-alert-dialog{
 	text-align: center;
 	border-radius: 20px;
 	background: #000000;
-	margin-top: 50px;
+	margin-top: 0px;
+    background: -webkit-linear-gradient(left, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%)!important; 
+	margin-bottom: 30px;
+	margin-top: 70px
+
 }
 #visitWeb a{
 	color: #fff;
@@ -226,4 +230,16 @@ ons-alert-dialog{
 	text-decoration: none;
 	font-size: 16px;
 	text-transform: none;
+
 }
+
+.toolbar--material{
+	box-shadow: none!important;
+}
+
+				/* activity */
+
+#activity figure{
+	background: #fff;
+	width: 20%;
+}				

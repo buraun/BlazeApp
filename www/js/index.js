@@ -39,10 +39,7 @@ document.addEventListener('init', function(event) {
 document.addEventListener('init', function(event) {
     var page = event.target;
     if (page.id === 'Tab2') {
-        ons.createDialog('dialog.html').then(function(dialog) {
-            dialog.show();
-          });
-
+        
         page.querySelector('#push-button2').onclick = function() {
             document.querySelector('#myNavigator').pushPage('container.html');
         };
@@ -85,12 +82,11 @@ button_true.addEventListener("click", function () {
 
 function valider (){
     $('.box').prependTo('.container-selected');
-    console.log('true');
+    
 }
 
 function delecard (){
     $('.box').first().remove();
-    console.log('false');
 }
 
 

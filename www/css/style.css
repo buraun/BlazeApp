@@ -218,7 +218,11 @@ ons-alert-dialog{
 	text-align: center;
 	border-radius: 20px;
 	background: #000000;
-	margin-top: 50px;
+	margin-top: 0px;
+    background: -webkit-linear-gradient(left, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%)!important; 
+	margin-bottom: 30px;
+	margin-top: 70px
+
 }
 #visitWeb a{
 	color: #fff;
@@ -226,4 +230,50 @@ ons-alert-dialog{
 	text-decoration: none;
 	font-size: 16px;
 	text-transform: none;
+
+}
+
+.toolbar--material{
+	box-shadow: none!important;
+}
+
+				/* activity */
+
+#activity{
+	background: #fff;
+}
+
+#activity figure{
+	background: #fff;
+	width: 100px;
+	height: 100px;
+	background-image: url('../img/montagne.JPG');
+}	
+
+.ouais-frr{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 30%;
+	width: 90%;
+}
+
+.contains-info-activity{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#return-swipe{
+	padding: 40px 20px;
+	text-align: center;
+	line-height: 22.5px;
+}
+
+#push-button-activity{
+	background: #F8812A;
+	color: #fff;
+	text-align: center;
+	margin-left: 27%;
+	margin-top: 0;
 }

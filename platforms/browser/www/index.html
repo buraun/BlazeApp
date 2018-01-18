@@ -172,8 +172,28 @@ under the License.
       <div class="right">Paris</div>
     </ons-toolbar>
     <ons-tabbar>
-      <ons-tab label="" page="tab1.html" active><img src='img/search3.png'/></ons-tab>
-      <ons-tab label="" page="tab2.html"><img src='img/user.png'/></ons-tab>
+      <ons-tab label="" page="tab1.html"><?xml version="1.0" encoding="UTF-8"?>
+      <svg class="test" width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.47">
+        <g id="Artboard-2" transform="translate(-38.000000, -451.000000)" fill-rule="nonzero" fill="#33312E">
+            <path d="M53.7232704,464.836478 L52.7295597,464.836478 L52.3773585,464.496855 C53.6100629,463.062893 54.3522013,461.201258 54.3522013,459.176101 C54.3522013,454.660377 50.6918239,451 46.1761006,451 C41.6603774,451 38,454.660377 38,459.176101 C38,463.691824 41.6603774,467.352201 46.1761006,467.352201 C48.2012579,467.352201 50.0628931,466.610063 51.4968553,465.377358 L51.836478,465.72956 L51.836478,466.72327 L58.1257862,473 L60,471.125786 L53.7232704,464.836478 Z M46.1761006,464.836478 C43.0440252,464.836478 40.5157233,462.308176 40.5157233,459.176101 C40.5157233,456.044025 43.0440252,453.515723 46.1761006,453.515723 C49.3081761,453.515723 51.836478,456.044025 51.836478,459.176101 C51.836478,462.308176 49.3081761,464.836478 46.1761006,464.836478 Z" id="search"></path>
+        </g>
+    </g>
+</svg></ons-tab>
+      <ons-tab label="" onclick="functionTest()" page="activity.html"><?xml version="1.0" encoding="UTF-8"?>
+      <svg class="test" width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>star</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-240.000000, -450.000000)" fill="#9E9D9B">
+            <polygon id="star" points="259.252917 472.540001 251.896112 468.118693 244.539306 472.540001 246.487207 464.200201 240 458.599877 248.556852 457.871662 251.896112 450 255.235371 457.854323 263.792223 458.582539 257.305016 464.182862"></polygon>
+        </g>
+    </g>
+</svg></ons-tab>
     </ons-tabbar>
   </ons-page>
 </template>
@@ -267,6 +287,15 @@ under the License.
   </ons-page>
 </template>
 
+<template id="activity.html">
+  <ons-page id="activity">
+    <h1>Activités</h1>
+    <figure>
+      <img src="img/montagne.JPG">
+    </figure>
+  </ons-page>
+</template>
+
     <template id="dialog.html">
       <ons-alert-dialog>
         <img src="img/switchR.JPG">
@@ -339,11 +368,6 @@ under the License.
   </ons-page>
 </template>
 
-<template id="Tab3">
-  <ons-page id="tab3">
-
-  </ons-page>
-</template>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="js/index.js"></script>

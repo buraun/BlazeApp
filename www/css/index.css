@@ -130,17 +130,27 @@ h1 {
 .center{
   text-align: center;
   position: fixed;
-  top: 35%;
+  top: 13%;
   left: 50%;
   /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+    width: 100%;
 }
 
 .center>h2{
   color: #FFFF;
   text-transform: none;
   font-family: 'anobold';
-    margin-bottom: 30px;
+  margin: 0 0 54px 0;
+    font-size: 40px;
+}
+
+.center>p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    text-transform: none;
+    margin: 0;
 }
 
 /* clouds animation */
@@ -272,7 +282,7 @@ bottom: 150px;
 .mountains{
   position: fixed;
   bottom: 0px;
-  left: 25px;
+  left: -23px;
   z-index: -1;
 }
 
@@ -281,6 +291,11 @@ bottom: 150px;
 
 .button{
   background: #FFFF;
-  color: #fad267;
+  color: #F8812A;
   border-radius: 21px;
+  width: 162px;
+    padding: 0 10px;
+    font-size: 19px;
+    text-transform: none;
+    margin-top: 40px;
 }

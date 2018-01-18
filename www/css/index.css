@@ -16,27 +16,27 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-}
 
+@font-face {
+  font-family: 'anobold';
+  src: url("font/anobold.ttf");
+}
 body {
+
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
+    background: rgb(250,217,97);
+    background: rgb(250,217,97);
+    background: rgb(250,217,97);
+    background: -moz-linear-gradient(top, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%) !important;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(250,217,97)), color-stop(92%, rgb(247,107,28)), color-stop(100%, rgb(247,107,28)))!important;
+    background: -webkit-linear-gradient(top, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%)!important;
+    background: -o-linear-gradient(top, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%)!important;
+    background: -ms-linear-gradient(top, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%)!important;
+    background: linear-gradient(to bottom, rgb(250,217,97) 0%, rgb(247,107,28) 92%, rgb(247,107,28) 100%)!important;
     background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family:'Open sans','HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
     margin:0px;
@@ -102,14 +102,200 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+.page, .page__background, .page__content{
+  -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+  background-color:#F76B1C !important;
+  background-image:linear-gradient(top, #FAD961 0%, #F76B1C 51%);
+  background-image:-webkit-linear-gradient(top, #FAD961 0%, #F76B1C 51%);
+  background-image:-ms-linear-gradient(top, #FAD961 0%, #F76B1C 51%);
+  position: unset;
+  overflow-x: hidden !important;
+
+}
+
+.center{
+  text-align: center;
+  position: fixed;
+  top: 13%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translateX(-50%);
+    width: 100%;
+}
+
+.center>h2{
+  color: #FFFF;
+  text-transform: none;
+  font-family: 'anobold';
+  margin: 0 0 54px 0;
+    font-size: 40px;
+}
+
+.center>p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    text-transform: none;
+    margin: 0;
+}
+
+/* clouds animation */
+
+.cloudsglobal{
+bottom: 150px;
+}
+.clouds {
+  z-index: -2;
+  width: 200x;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.cloud1 {
+  z-index: -2;
+	bottom: 180px;
+  fill: #eee;
+  -webkit-animation: move 52s linear infinite;
+  -moz-animation: move 52s linear infinite;
+  -o-animation: move 52s linear infinite;
+  animation: move 52s linear infinite;
+}
+
+.cloud2 {
+  z-index: -2;
+  bottom: 173px;
+  fill: #eee;
+  -webkit-animation: move 140s linear infinite backwards;
+  -moz-animation: move 140s linear infinite backwards;
+  -o-animation: move 140s linear infinite backwards;
+  animation: move 140s linear infinite backwards;
+}
+
+.cloud3 {
+  z-index: -2;
+  bottom: 115px;
+  fill: #eee;
+  -webkit-animation: move 45s linear infinite backwards;
+  -moz-animation: move 45s linear infinite backwards;
+  -o-animation: move 45s linear infinite backwards;
+  animation: move 45s linear infinite backwards;
+}
+
+.cloud4 {
+  z-index: -2;
+  bottom: 133px;
+  fill: #eee;
+  -webkit-animation: move 58s linear infinite backwards;
+  -moz-animation: move 58s linear infinite backwards;
+  -o-animation: move 58s linear infinite backwards;
+  animation: move 58s linear infinite backwards;
+}
+
+.cloud5 {
+  bottom: 142px;
+  fill: #eee;
+  -webkit-animation: move 48s linear infinite backwards;
+  -moz-animation: move 48s linear infinite backwards;
+  -o-animation: move 48s linear infinite backwards;
+  animation: move 48s linear infinite backwards;
+}
+.cloud6 {
+  z-index: -2;
+  bottom: 128px;
+  fill: #eee;
+  -webkit-animation: move 64s linear infinite backwards;
+  -moz-animation: move 64s linear infinite backwards;
+  -o-animation: move 64s linear infinite backwards;
+  animation: move 64s linear infinite backwards;
+}
+.cloud7 {
+  bottom: 125px;
+  fill: #eee;
+  -webkit-animation: move 153s linear infinite backwards;
+  -moz-animation: move 153s linear infinite backwards;
+  -o-animation: move 153s linear infinite backwards;
+  animation: move 153s linear infinite backwards;
+}
+.cloud8 {
+  z-index: -2;
+  bottom: 175px;
+  fill: #eee;
+  -webkit-animation: move 42s linear infinite backwards;
+  -moz-animation: move 42s linear infinite backwards;
+  -o-animation: move 42s linear infinite backwards;
+  animation: move 42s linear infinite backwards;
+}
+.cloud9 {
+  z-index: -2;
+  bottom: 145px;
+  fill: #eee;
+  -webkit-animation: move 74s linear infinite backwards;
+  -moz-animation: move 74s linear infinite backwards;
+  -o-animation: move 74s linear infinite backwards;
+  animation: move2 74s linear infinite backwards;
+}
+.cloud10 {
+  z-index: -2;
+  bottom: 37px;
+  fill: #eee;
+  -webkit-animation: move 84s linear infinite backwards;
+  -moz-animation: move 84s linear infinite backwards;
+  -o-animation: move 84s linear infinite backwards;
+  animation: move2 84s linear infinite backwards;
+}
+
+.cloud11 {
+  z-index: -2;
+  bottom:22px;
+  fill: #eee;
+  -webkit-animation: move 47s linear infinite backwards;
+  -moz-animation: move 47s linear infinite backwards;
+  -o-animation: move 47s linear infinite backwards;
+  animation: move 47s linear infinite backwards;
+}
+@-webkit-keyframes move {
+  from {-webkit-transform: translateX(5px);}
+  to {-webkit-transform: translateX(780px);}
+}
+
+
+@-webkit-keyframes move2 {
+  from {-webkit-transform: translateX(-15px);}
+  to {-webkit-transform: translateX(780px);}
+}
+
+.mountains{
+  position: fixed;
+  bottom: 0px;
+  left: -23px;
+  z-index: -1;
+}
+
+
+/* buttons style overiding onsen */
+
+.button{
+  background: #FFFF;
+  color: #F8812A;
+  border-radius: 21px;
+  width: 162px;
+    padding: 0 10px;
+    font-size: 19px;
+    text-transform: none;
+    margin-top: 40px;
 }

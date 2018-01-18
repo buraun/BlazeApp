@@ -84,9 +84,15 @@ button_true.addEventListener("click", function () {
 });*/
 
 function valider (){
-    $('#content').prependTo('.container-selected');
+    $('.box').prependTo('.container-selected');
     console.log('true');
 }
+
+function delecard (){
+    $('.box').first().remove();
+    console.log('false');
+}
+
 
 var button_false = document.querySelector('.btn-1');
 button_false.addEventListener("click", function () {

@@ -124,6 +124,15 @@
 	padding-right:10px;
 }
 
+#Tab1{
+	background: #fff!important;
+}
+
+#Tab1 .page__content{
+	position: inherit!important;
+	background: #fff!important;
+}
+
 #Tab2 h1{
 	padding: 25px 0;
 	text-transform: none;

@@ -114,20 +114,20 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-.page, .page__background, .page__content{
+.page, .page__background{
   -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
   -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
   -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-  background-color:#F76B1C !important;
-  background-image:linear-gradient(top, #FAD961 0%, #F76B1C 51%);
-  background-image:-webkit-linear-gradient(top, #FAD961 0%, #F76B1C 51%);
-  background-image:-ms-linear-gradient(top, #FAD961 0%, #F76B1C 51%);
-  position: unset;
+  //background-color:#F76B1C !important;
+  background-image:linear-gradient(top, #FAD961 0%, #F76B1C 80%);
+  background-image:-webkit-linear-gradient(top, #FAD961 0%, #F76B1C 80%);
+  background-image:-ms-linear-gradient(top, #FAD961 0%, #F76B1C 80%);
+  /*position: unset;*/
   overflow-x: hidden !important;
 
 }
 
-.center{
+.Homecenter{
   text-align: center;
   position: fixed;
   top: 13%;
@@ -137,7 +137,7 @@ h1 {
     width: 100%;
 }
 
-.center>h2{
+.Homecenter>h2{
   color: #FFFF;
   text-transform: none;
   font-family: 'anobold';
@@ -145,7 +145,7 @@ h1 {
     font-size: 40px;
 }
 
-.center>p{
+.Homecenter>p{
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     color: #FFF;

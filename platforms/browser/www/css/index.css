@@ -18,8 +18,8 @@
  */
 
 @font-face {
-  font-family: 'anabold';
-  src: url(font/anabold.ttf);
+  font-family: 'anobold';
+  src: url("font/anobold.ttf");
 }
 body {
 
@@ -139,7 +139,8 @@ h1 {
 .center>h2{
   color: #FFFF;
   text-transform: none;
-  font-family: 'anabold' ;
+  font-family: 'anobold';
+    margin-bottom: 30px;
 }
 
 /* clouds animation */

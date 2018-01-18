@@ -239,7 +239,41 @@ ons-alert-dialog{
 
 				/* activity */
 
+#activity{
+	background: #fff;
+}
+
 #activity figure{
 	background: #fff;
-	width: 20%;
-}				
+	width: 100px;
+	height: 100px;
+	background-image: url('../img/montagne.JPG');
+}	
+
+.ouais-frr{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 30%;
+	width: 90%;
+}
+
+.contains-info-activity{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#return-swipe{
+	padding: 40px 20px;
+	text-align: center;
+	line-height: 22.5px;
+}
+
+#push-button-activity{
+	background: #F8812A;
+	color: #fff;
+	text-align: center;
+	margin-left: 27%;
+	margin-top: 0;
+}

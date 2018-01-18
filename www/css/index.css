@@ -299,3 +299,33 @@ bottom: 150px;
     text-transform: none;
     margin-top: 40px;
 }
+
+
+.left{
+  font-family: 'anobold';
+  font-size: 22px;
+  text-transform: none;
+  font-weight: normal;
+}
+#container ons-toolbar .left, .right {
+  font-weight: normal;
+}
+.box>h2{
+  font-family: 'Open Sans';
+  font-size: 22px;
+  text-transform: none;
+}
+.btn-1 .btn-2{
+  font-family: 'Open Sans';
+  font-size: 19px;
+}
+
+.activity{
+  background-color: #fbfbfb !important;
+}
+
+.activity>h1{
+font-family: 'Open Sans';
+font-size: 22px;
+text-transform: none;
+}

@@ -95,8 +95,3 @@ button_false.addEventListener("click", function () {
     var all_content = document.querySelectorAll("#content");
     element.removeChild(all_content[0]);
 });
-
-function functionTest(){
-   
-}
-
